@@ -249,20 +249,12 @@ nav a:hover::after {
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-grid {
-        position: relative;
-        padding-left: 24px;
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px;
     }
-
-    .projects-grid::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 10px;
-        height: 100%;
-        width: 2px;
-        background-color: var(--gradient-1);
-        border-radius: 1px;
+    .portfolio-container {
+        flex-direction: column; 
     }
 }
 .profile-image {
@@ -607,8 +599,8 @@ footer {
     display: flex;
     align
 
-        /* Header responsive styles */
-    @media (max-width: 768px) {
+/* Header responsive styles */
+@media (max-width: 768px) {
     .header-content {
         flex-direction: column;
         gap: 16px;
@@ -645,19 +637,19 @@ footer {
     }
 }
 
-    /* Footer responsive styles */
-    @media (max-width: 768px) {
-        footer {
-            padding: 32px 16px;
-            margin-top: 32px;
-        }
+/* Footer responsive styles */
+@media (max-width: 768px) {
+    footer {
+        padding: 32px 16px;
+        margin-top: 32px;
+    }
 
-        .social-links {
-            flex-wrap: wrap;
-            gap: 16px;
-            padding: 16px;
-            justify-content: center;
-        }
+    .social-links {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+        justify-content: center;
+    }
 
-        .social-link {
-            width: 48px;
+    .social-link {
+        width: 48px;
