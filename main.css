@@ -653,3 +653,18 @@ footer {
 
     .social-link {
         width: 48px;
+
+    @media (max-width: 768px) {
+  .projects-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 8px;
+  }
+
+  .project-card {
+    flex: 0 0 auto;
+    min-width: 280px;
+  }
+}
