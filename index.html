@@ -75,12 +75,27 @@
   </div>
 </section>
 
+<!-- Responsive Style -->
+<style>
+  @media (max-width: 768px) {
+    .projects-grid {
+      flex-direction: column !important;
+      overflow-x: unset !important;
+    }
+
+    .project-card {
+      flex: 1 1 100% !important;
+    }
+  }
+</style>
+
 <section id="projects">
   <div class="container">
     <h2 class="section-title">My Projects</h2>
-    <div class="projects-grid-wrapper" style="overflow-x: auto; padding-bottom: 10px;">
-      <div class="projects-grid" style="display: flex; flex-wrap: nowrap; gap: 20px;">
+    <div class="projects-grid-wrapper" style="padding-bottom: 10px;">
+      <div class="projects-grid" style="display: flex; flex-wrap: nowrap; gap: 20px; overflow-x: auto;">
 
+        <!-- Project 1 -->
         <div class="project-card glass" style="flex: 0 0 300px;">
           <div class="project-image">
             <img src="/api/placeholder/600/400" alt="Project 1" style="width: 100%; height: auto;">
@@ -93,11 +108,12 @@
             <span class="tag">SQL</span>
           </div>
           <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Live Demo</a>
+            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Source Code</a>
           </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="project-card glass" style="flex: 0 0 300px;">
           <div class="project-image">
             <img src="/api/placeholder/600/400" alt="Project 2" style="width: 100%; height: auto;">
@@ -110,27 +126,28 @@
             <span class="tag">.txt</span>
           </div>
           <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Live Demo</a>
+            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Source Code</a>
           </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="project-card glass" style="flex: 0 0 300px;">
           <div class="project-image">
             <img src="/api/placeholder/600/400" alt="Project 3" style="width: 100%; height: auto;">
           </div>
           <h3>TicTacToe</h3>
-          <p>Developed a console-based Tic Tac Toe game using Java, applying object-oriented programming principles such as encapsulation and abstraction. The game logic is modularized for readability and maintainability</p>
+          <p>Developed a console-based Tic Tac Toe game using Java, applying object-oriented programming principles such as encapsulation and abstraction. The game logic is modularized for readability and maintainability.</p>
           <div class="tags">
             <span class="tag">Java</span>
-
           </div>
           <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="https://github.com/jasonam84/TicTacToe#tictactoe" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Live Demo</a>
+            <a href="https://github.com/jasonam84/TicTacToe#tictactoe" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Source Code</a>
           </div>
         </div>
 
+        <!-- Project 4 -->
         <div class="project-card glass" style="flex: 0 0 300px;">
           <div class="project-image">
             <img src="/api/placeholder/600/400" alt="Project 4" style="width: 100%; height: auto;">
@@ -141,11 +158,12 @@
             <span class="tag">Figma</span>
           </div>
           <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Live Demo</a>
+            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Source Code</a>
           </div>
         </div>
 
+        <!-- Project 5 -->
         <div class="project-card glass" style="flex: 0 0 300px;">
           <div class="project-image">
             <img src="/api/placeholder/600/400" alt="Project 5" style="width: 100%; height: auto;">
@@ -158,8 +176,8 @@
             <span class="tag">Java (backend)</span>
           </div>
           <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Live Demo</a>
+            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block;">Source Code</a>
           </div>
         </div>
 
@@ -167,6 +185,7 @@
     </div>
   </div>
 </section>
+
 
 
 <section id="experience">
