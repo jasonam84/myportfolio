@@ -249,22 +249,12 @@ nav a:hover::after {
 }
 
 @media only screen and (max-width: 768px) {
-    .projects-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        position: relative; /* if you want vertical line as well */
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px;
     }
-
-    .projects-grid::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 10px;
-        height: 100%;
-        width: 2px;
-        background-color: var(--gradient-1);
-        border-radius: 1px;
+    .portfolio-container {
+        flex-direction: column;
     }
 }
 .profile-image {
