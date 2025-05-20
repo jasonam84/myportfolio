@@ -250,18 +250,21 @@ nav a:hover::after {
 
 @media only screen and (max-width: 768px) {
     .projects-grid {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        position: relative; /* if you want vertical line as well */
     }
 
     .projects-grid::before {
         content: "";
         position: absolute;
         top: 0;
-        left: 10px;          /* distance from left edge */
+        left: 10px;
         height: 100%;
-        width: 2px;          
-        background-color: var(--gradient-1); /* your theme color */
-        border-radius: 1px;  /* optional rounding */
+        width: 2px;
+        background-color: var(--gradient-1);
+        border-radius: 1px;
     }
 }
 .profile-image {
