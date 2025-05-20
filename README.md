@@ -19,7 +19,7 @@ Welcome to my personal portfolio! Here you can find information about my skills,
 
 ## How to View
 
-[Your Portfolio URL]
+ https://jasonam84.github.io/myportfolio/
 
 ## Contact
 
