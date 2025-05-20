@@ -249,12 +249,19 @@ nav a:hover::after {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Styles for mobile devices */
-    body {
-        font-size: 14px;
+    .projects-grid {
+        position: relative;
     }
-    .portfolio-container {
-        flex-direction: column; 
+
+    .projects-grid::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 10px;          /* distance from left edge */
+        height: 100%;
+        width: 2px;          
+        background-color: var(--gradient-1); /* your theme color */
+        border-radius: 1px;  /* optional rounding */
     }
 }
 .profile-image {
@@ -599,8 +606,8 @@ footer {
     display: flex;
     align
 
-/* Header responsive styles */
-@media (max-width: 768px) {
+        /* Header responsive styles */
+    @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
         gap: 16px;
@@ -637,24 +644,19 @@ footer {
     }
 }
 
-/* Footer responsive styles */
-@media (max-width: 768px) {
-    footer {
-        padding: 32px 16px;
-        margin-top: 32px;
-    }
+    /* Footer responsive styles */
+    @media (max-width: 768px) {
+        footer {
+            padding: 32px 16px;
+            margin-top: 32px;
+        }
 
-    .social-links {
-        flex-wrap: wrap;
-        gap: 16px;
-        padding: 16px;
-        justify-content: center;
-    }
+        .social-links {
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px;
+            justify-content: center;
+        }
 
-    .social-link {
-        width: 48px;
-
-
-    min-width: 280px;
-  }
-}
+        .social-link {
+            width: 48px;
