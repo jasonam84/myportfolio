@@ -1,6 +1,6 @@
 :root {
-    --background-dark: #ffffff;            /* changed dark background to white */
-    --background-light: #f9fafb;           /* very light gray/white */
+    --background-dark: #ffffff;            /* changed dark background to pure white */
+    --background-light: #ffffff;          /* very light gray/white */
     --text-dark: #1e293b;                   /* dark blue text */
     --text-light: #475569;                  /* medium blue/gray text */
     --glass-bg-dark: rgba(255, 255, 255, 0.3);  /* transparent white glass */
@@ -29,6 +29,42 @@
     --glass-border: var(--glass-border-light);
     --shadow: var(--shadow-light);
 }
+
+body {
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background-gradient {
+    display: none !important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glass {
+    background: var(--glass-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
 
 * {
     margin: 0;
@@ -89,7 +125,9 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 16px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -159,12 +197,22 @@ nav a:hover::after {
 }
 
 .hero {
-    display: flex;
+    display: flex;               /* use flexbox for layout */
+    flex-direction: column;      /* stack children vertically */
+    justify-content: center;     /* center content vertically */
+    align-items: center;         /* center content horizontally */
     min-height: calc(100vh - 90px);
-    align-items: center;
     padding: 48px 0;
+    margin-top: 40px;            /* add margin at the top */
+    text-align: center;          /* center text inside */
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    width: 100%;
+}
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -200,6 +248,15 @@ nav a:hover::after {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* Styles for mobile devices */
+    body {
+        font-size: 14px;
+    }
+    .portfolio-container {
+        flex-direction: column; 
+    }
+}
 .profile-image {
     width: 280px;
     height: 280px;
@@ -213,12 +270,15 @@ nav a:hover::after {
     flex-shrink: 0;
 }
 
+
 .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
+
+
 
 .profile-content {
     flex-grow: 1;
@@ -258,6 +318,7 @@ nav a:hover::after {
     box-shadow: 0 10px 25px rgb(59, 130, 246);
 }
 
+
 section {
     padding: 80px 0;
 }
@@ -279,6 +340,7 @@ section {
 .project-card {
     display: flex;
     flex-direction: column;
+    height: 95%;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
@@ -311,6 +373,25 @@ section {
     opacity: 0.8;
     margin-bottom: 16px;
     flex-grow: 1;
+}
+
+/* Responsive adjustments for projects grid */
+@media (max-width: 767px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .tags {
@@ -479,12 +560,14 @@ section {
     border-radius: 8px;
     border: none;
     background: var(--glass-bg);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     color: var(--text);
     font-size: 1rem;
     border: 1px solid var(--glass-border);
+    box-shadow: none !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
+
 
 .form-control:focus {
     outline: none;
@@ -511,7 +594,7 @@ textarea.form-control {
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(247, 127, 111, 0.4);
+    box-shadow: 0 10px 25px rgb(59, 130, 246);
 }
 
 footer {
@@ -535,3 +618,58 @@ footer {
     border-radius: 50%;
     display: flex;
     align
+
+/* Header responsive styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 0;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+
+    .logo {
+        margin-right: auto;
+        padding-left: 16px;
+    }
+}
+
+/* Footer responsive styles */
+@media (max-width: 768px) {
+    footer {
+        padding: 32px 16px;
+        margin-top: 32px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 48px;
