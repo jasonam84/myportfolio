@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jason Amo-Mensah</title>
   <link rel="stylesheet" href="main.css" />
 
@@ -29,24 +29,18 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <button id="theme-toggle" class="theme-toggle">☀️</button>
+    <!--<button id="theme-toggle" class="theme-toggle">☀️</button>-->
   </div>
 </header>
 
-<!-- Other page content -->
-
-<script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
-<script src="index.js"></script>
-</body>
-</html>
 
 <section id="home" class="hero">
   <div class="container">
-    <div class="hero-content glass">
-      <h1>Hi, I'm <span id="name">Jason Amo-Mensah</span></h1>
-      <p>Hi, I’m Jason — an Information Systems + Computer Science student passionate about bridging technology and business.</p>
-      <a href="#about" class="download-btn">Learn More</a>
-    </div>
+    <h1>Hi, I'm <span id="name">Jason Amo-Mensah</span></h1>
+    <h2><p>an Information Systems + Computer Science student passionate about the intersection </p></h2>
+    <h2><p>of technology and business.</p></h2>
+    <a href="#about" class="download-btn">Learn More</a>
+  </div>
   </div>
 </section>
 
@@ -59,7 +53,7 @@
       </div>
       <div class="profile-content glass">
         <h2>Professional Summary</h2>
-        <p>I’m currently studying Information Systems with a minor in Computer & Information Science and Aviation Management at the Ohio State University with a strong interest in data analytics, software development, and fintech innovation. My academic background is backed by hands-on experience through personal projects.</p>
+        <p>I’m currently studying Information Systems with a minor in Computer & Information Science and Aviation Management at the Ohio State University with a strong interest in data analytics, software development, and innovation. My academic background is backed by hands-on experience through personal projects.</p>
         <p>I thrive in collaborative environments, enjoy solving complex problems, and aspire to work at the intersection of technology and strategy.</p>
         <p>Outside of work, I enjoy playing soccer and learning new songs on my electric guitar. using technology to drive smarter business decisions, and I'm committed to continuous learning, collaboration, and integrity in everything I do.</p>
         <a href="tailored.pdf" class="download-btn" download>
@@ -78,91 +72,91 @@
 <section id="projects">
   <div class="container">
     <h2 class="section-title">My Projects</h2>
-    <div class="projects-grid-wrapper" style="overflow-x: auto; padding-bottom: 10px;">
-      <div class="projects-grid" style="display: flex; flex-wrap: nowrap; gap: 20px;">
-
-        <div class="project-card glass" style="flex: 0 0 300px;">
-          <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 1" style="width: 100%; height: auto;">
-          </div>
-          <h3>Personal Budget Tracker (Web App)</h3>
-          <p>Users can add income and expenses; the app shows total balance.</p>
-          <div class="tags">
-            <span class="tag">HTML + CSS</span>
-            <span class="tag">Java</span>
-            <span class="tag">SQL</span>
-          </div>
-          <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
-          </div>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass">
+        <div class="project-image">
+          <img src="/api/placeholder/600/400" alt="Project 1" style="width: 100%; height: auto;">
         </div>
-
-        <div class="project-card glass" style="flex: 0 0 300px;">
-          <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 2" style="width: 100%; height: auto;">
-          </div>
-          <h3>Student Grade Management System</h3>
-          <p>Lets a user input student names, courses, and grades. Calculates average and pass/fail.</p>
-          <div class="tags">
-            <span class="tag">Java (logic)</span>
-            <span class="tag">HTML/CSS for frontend</span>
-            <span class="tag">.txt</span>
-          </div>
-          <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
-          </div>
+        <h3>Personal Budget Tracker (Web App)</h3>
+        <p>Users can add income and expenses; the app shows total balance.</p>
+        <div class="tags">
+          <span class="tag">HTML + CSS</span>
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
         </div>
-
-        <div class="project-card glass" style="flex: 0 0 300px;">
-          <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 3" style="width: 100%; height: auto;">
-          </div>
-          <h3>TicTacToe</h3>
-          <p>Developed a console-based Tic Tac Toe game using Java, applying object-oriented programming principles such as encapsulation and abstraction. The game logic is modularized for readability and maintainability</p>
-          <div class="tags">
-            <span class="tag">Java</span>
-
-          </div>
-          <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
-          </div>
+        <div class="project-links" style="margin-top: 10px;">
+          <a href="#" style="text-decoration:none; padding:6px 10px; background:transparent; color:#3B82F6; border: 2px solid #3B82F6; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+          <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3B82F6; color:#ffffff; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
         </div>
+      </div>
 
-        <div class="project-card glass" style="flex: 0 0 300px;">
-          <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 4" style="width: 100%; height: auto;">
-          </div>
-          <h3>Figma Case Study</h3>
-          <p>Description of project 4 and technologies used.</p>
-          <div class="tags">
-            <span class="tag">Figma</span>
-          </div>
-          <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
-          </div>
+      <!-- Project 2 -->
+      <div class="project-card glass">
+        <div class="project-image">
+          <img src="/api/placeholder/600/400" alt="Project 2" style="width: 100%; height: auto;">
         </div>
-
-        <div class="project-card glass" style="flex: 0 0 300px;">
-          <div class="project-image">
-            <img src="/api/placeholder/600/400" alt="Project 5" style="width: 100%; height: auto;">
-          </div>
-          <h3>Aircraft Fleet Dashboard</h3>
-          <p>Show plane models, service dates, usage hours.</p>
-          <div class="tags">
-            <span class="tag">HTML + CSS</span>
-            <span class="tag">Javascript</span>
-            <span class="tag">Java (backend)</span>
-          </div>
-          <div class="project-links" style="margin-top: 10px;">
-            <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3b82f6; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
-            <a href="#" style="text-decoration:none; padding:8px 15px; background:#10b981; color:#fff; border-radius:5px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
-          </div>
+        <h3>Student Grade Management System</h3>
+        <p>Lets a user input student names, courses, and grades. Calculates average and pass/fail.</p>
+        <div class="tags">
+          <span class="tag">Java (logic)</span>
+          <span class="tag">HTML/CSS for frontend</span>
+          <span class="tag">.txt</span>
         </div>
+        <div class="project-links" style="margin-top: 10px;">
+          <a href="#" style="text-decoration:none; padding:6px 10px; background:transparent; color:#3B82F6; border: 2px solid #3B82F6; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+          <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3B82F6; color:#ffffff; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
+        </div>
+      </div>
 
+      <!-- Project 3 -->
+      <div class="project-card glass">
+        <div class="project-image">
+          <img src="/api/placeholder/600/400" alt="Project 3" style="width: 100%; height: auto;">
+        </div>
+        <h3>TicTacToe</h3>
+        <p>Developed a console-based Tic Tac Toe game using Java, applying object-oriented programming principles such as encapsulation and abstraction. The game logic is modularized for readability and maintainability</p>
+        <div class="tags">
+          <span class="tag">Java</span>
+        </div>
+        <div class="project-links" style="margin-top: 10px;">
+          <a href="#" style="text-decoration:none; padding:6px 10px; background:transparent; color:#3B82F6; border: 2px solid #3B82F6; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+          <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3B82F6; color:#ffffff; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card glass">
+        <div class="project-image">
+          <img src="/api/placeholder/600/400" alt="Project 4" style="width: 100%; height: auto;">
+        </div>
+        <h3>Figma Case Study</h3>
+        <p>Description of project 4 and technologies used.</p>
+        <div class="tags">
+          <span class="tag">Figma</span>
+        </div>
+        <div class="project-links" style="margin-top: 10px;">
+          <a href="#" style="text-decoration:none; padding:6px 10px; background:transparent; color:#3B82F6; border: 2px solid #3B82F6; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+          <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3B82F6; color:#ffffff; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card glass">
+        <div class="project-image">
+          <img src="/api/placeholder/600/400" alt="Project 5" style="width: 100%; height: auto;">
+        </div>
+        <h3>Aircraft Fleet Dashboard</h3>
+        <p>Show plane models, service dates, usage hours.</p>
+        <div class="tags">
+          <span class="tag">HTML + CSS</span>
+          <span class="tag">Javascript</span>
+          <span class="tag">Java (backend)</span>
+        </div>
+        <div class="project-links" style="margin-top: 10px;">
+          <a href="#" style="text-decoration:none; padding:6px 10px; background:transparent; color:#3B82F6; border: 2px solid #3B82F6; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Source Code</a>
+          <a href="#" style="text-decoration:none; margin-right:10px; padding:8px 15px; background:#3B82F6; color:#ffffff; border-radius:8px; font-weight:600; display:inline-block; transition: background-color 0.3s;">Live Demo</a>
+        </div>
       </div>
     </div>
   </div>
@@ -383,4 +377,4 @@
       </a>
     </div>
   </div>
-  </footer>
+</footer>
